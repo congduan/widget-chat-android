@@ -1,0 +1,14 @@
+.gradle/
+.kotlin/
+.idea/
+local.properties
+**/build/
+*.jks
+*.keystore
+*.iml
+.DS_Store
+
+# Local planning and verification notes (kept out of the repository)
+docs/IMPLEMENTATION_PLAN.txt
+docs/P0_DECISIONS.md
+docs/P0_VERIFICATION.txt

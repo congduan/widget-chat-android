@@ -1,0 +1,157 @@
+<resources>
+    <string name="widget_description">通过配置自定义文字、电量和倒计时，AI 对话将在后续接入。</string>
+    <string name="refresh">刷新</string>
+    <string name="refresh_description">刷新组件数据</string>
+
+    <string name="hero_title">让桌面，\n按你的想法生长。</string>
+    <string name="hero_subtitle">先从一个真实可用的小组件开始。选择模板，调整配置，然后放到桌面。</string>
+    <string name="section_mine">01  我的组件</string>
+    <string name="section_preview">02  桌面预览</string>
+    <string name="section_json">03  编辑 JSON 配置</string>
+    <string name="section_json_collapse">收起 JSON 配置</string>
+
+    <string name="action_new_draft">新建草稿</string>
+    <string name="action_import">导入 JSON</string>
+    <string name="action_refresh_data">刷新数据</string>
+    <string name="action_validate">校验并预览</string>
+    <string name="action_export">导出</string>
+    <string name="action_save">保存修改</string>
+    <string name="action_save_copy">另存副本</string>
+    <string name="action_undo">恢复上一版本</string>
+    <string name="action_add_widget">添加到桌面</string>
+
+    <string name="state_dirty">未保存</string>
+    <string name="state_saved">已保存</string>
+    <string name="host_size">桌面分配：%1$d × %2$d dp</string>
+    <string name="chip_follow_host">跟随桌面</string>
+    <string name="chip_small">小卡片</string>
+    <string name="chip_standard">标准</string>
+    <string name="fit_hint">小尺寸会自动缩小文字，空间不足时保留主要信息。需要完整布局可在桌面长按组件，拖动边框增高。</string>
+
+    <string name="chat_card_title">对话生成</string>
+    <string name="chat_card_example">例如：做一个深色组件，显示电量和考试倒计时。</string>
+    <string name="chat_card_note">请先在设置中配置模型。请求只包含你的描述和当前配置。</string>
+
+    <string name="json_hint">修改 text、textSize、background、targetDate，或在 data.sources 中配置 STATIC / HTTP / SCRIPT 数据源；给任意节点加 \"click\": \"scheme://…\" 即可点击跳转（widgetchat:// 由本应用处理）。点击校验预览后查看效果。</string>
+    <string name="json_label">WidgetSpec v2</string>
+    <string name="footer_note">本地保存 · 数据源可选联网 · WorkManager 15 分钟起刷新</string>
+
+    <string name="language">语言</string>
+    <string name="language_system">跟随系统</string>
+    <string name="language_zh">中文</string>
+    <string name="language_en">English</string>
+
+    <string name="status_idle">在设置中配置模型后即可对话生成</string>
+    <string name="status_selected">已选择「%1$s」</string>
+    <string name="status_save_first">请先保存，再刷新数据源</string>
+    <string name="status_refreshing">正在刷新数据…</string>
+    <string name="status_refreshed_local">没有配置数据源，已按本地数据刷新</string>
+    <string name="status_refreshed">数据已刷新</string>
+    <string name="status_refresh_partial">刷新完成，%1$d/%2$d 个数据源失败</string>
+    <string name="status_refresh_failed">刷新失败：%1$s</string>
+    <string name="status_operation_failed">操作失败：%1$s</string>
+    <string name="status_exported">配置已导出</string>
+    <string name="status_imported">已导入预览，保存后才会加入组件库</string>
+    <string name="status_new_draft">新草稿，保存后加入组件库</string>
+    <string name="status_preview_ok">配置有效，预览已更新；尚未保存</string>
+    <string name="status_saved">已保存，并更新绑定的桌面组件</string>
+    <string name="status_saved_copy">已保存为独立副本</string>
+    <string name="status_undone">已恢复上一版本</string>
+    <string name="status_pin_unsupported">请长按桌面空白处 → 小组件 → Widget Chat，然后选择保存的组件</string>
+    <string name="status_pin_requested">请在系统弹窗确认添加；每个桌面实例独立绑定组件</string>
+    <string name="status_pin_rejected">桌面未接受添加请求，请从桌面小组件列表添加</string>
+
+    <string name="error_write_file">无法写入目标文件</string>
+    <string name="error_read_file">无法读取文件</string>
+    <string name="error_too_large">配置不能超过 64 KB</string>
+    <string name="error_library">无法读取组件库</string>
+    <string name="error_library_kept">数据未被覆盖。请保留应用数据并检查存储文件。</string>
+    <string name="error_unknown">未知错误</string>
+    <string name="toast_refresh_failed">桌面刷新失败：%1$s</string>
+
+    <string name="configure_title">为这个桌面位置\n选择一个组件</string>
+    <string name="configure_instance">桌面实例 #%1$d · 可随时长按组件重新配置</string>
+    <string name="configure_apply">使用这个组件</string>
+    <string name="configure_cancel">取消</string>
+    <string name="configure_save_failed">保存失败：%1$s</string>
+
+    <string name="widget_unbound_name">选择组件</string>
+    <string name="widget_unbound_hint">长按组件，选择重新配置</string>
+    <string name="widget_updated">更新 %1$s</string>
+    <string name="battery_unknown">电量未知</string>
+    <string name="progress_value">进度 %1$d%%</string>
+
+    <string name="template_daily_name">每日一句</string>
+    <string name="template_daily_quote">留一点时间，给自己。</string>
+    <string name="template_battery_name">电量看板</string>
+    <string name="template_battery_title">随时，充满能量</string>
+    <string name="template_countdown_name">期待的日子</string>
+    <string name="template_countdown_title">下一个值得期待的日子</string>
+    <string name="template_countdown_hint">在 JSON 中修改 targetDate</string>
+    <string name="template_pdd_name">拼多多秒杀</string>
+    <string name="template_pdd_title">限时秒杀</string>
+    <string name="template_pdd_hint">点击按钮打开拼多多会场</string>
+    <string name="template_pdd_button">去逛逛 →</string>
+
+    <string name="tab_widgets">组件</string>
+    <string name="tab_templates">模板</string>
+    <string name="tab_chat">对话</string>
+    <string name="tab_settings">设置</string>
+
+    <string name="templates_title">从模板开始</string>
+    <string name="templates_subtitle">选择一个模板载入为草稿，再调整 JSON 配置。</string>
+    <string name="action_use_template">使用此模板</string>
+    <string name="status_template_loaded">模板「%1$s」已载入为新草稿</string>
+
+    <string name="chat_title">描述你想要的组件</string>
+    <string name="chat_subtitle">用一句话描述，DeepSeek 或任意 OpenAI 兼容模型会生成配置。</string>
+    <string name="chat_input_hint">例如：深色组件，显示电量和考试倒计时</string>
+    <string name="chat_send">发送</string>
+    <string name="chat_switch_model">模型</string>
+    <string name="chat_manage_models">管理</string>
+    <string name="status_model_switched">已切换到 %1$s</string>
+    <string name="chat_generating">模型正在生成组件配置…</string>
+    <string name="chat_apply_spec">应用到编辑器</string>
+    <string name="chat_not_configured">请先在设置中填写 API Key</string>
+    <string name="chat_invalid_spec">模型返回的配置未通过校验：%1$s</string>
+    <string name="chat_failed">调用失败：%1$s</string>
+    <string name="chat_spec_ready">已收到配置，确认预览后可应用到编辑器。</string>
+    <string name="chat_reply_only">模型只回复了文字，没有返回配置，请再要求它生成 WidgetSpec。</string>
+    <string name="status_applied_ai">已载入模型生成的配置，保存后加入组件库</string>
+
+    <string name="settings_model_section">AI 模型</string>
+    <string name="model_provider">供应商</string>
+    <string name="model_deepseek">DeepSeek</string>
+    <string name="model_glm">智谱 GLM</string>
+    <string name="model_openai">OpenAI</string>
+    <string name="model_custom">自定义（OpenAI 兼容）</string>
+    <string name="model_common">常用模型</string>
+    <string name="model_name">模型名</string>
+    <string name="model_base_url">接口地址</string>
+    <string name="model_api_key">API Key</string>
+    <string name="model_key_saved">已保存，留空则保持不变</string>
+    <string name="model_key_missing">尚未配置</string>
+    <string name="model_privacy_hint">密钥使用 Android Keystore 加密，只会发送到上面的接口地址。</string>
+    <string name="model_profiles_hint">每次保存的配置都会保留，可在对话页一键切换。</string>
+    <string name="action_save_model">保存模型配置</string>
+    <string name="action_clear_key">清除密钥</string>
+    <string name="status_model_saved">模型配置已保存</string>
+    <string name="status_model_missing_name">请填写模型名</string>
+    <string name="status_model_invalid_url">接口地址必须以 https:// 开头</string>
+    <string name="status_key_cleared">API Key 已清除</string>
+
+    <string name="settings_title">设置</string>
+    <string name="settings_subtitle">刷新策略、语言与本地数据。</string>
+    <string name="settings_refresh_section">数据刷新</string>
+    <string name="settings_auto_refresh">后台自动刷新</string>
+    <string name="settings_auto_refresh_hint">仅使用 WorkManager，最快 15 分钟一次</string>
+    <string name="action_refresh_bound">立即刷新已绑定组件</string>
+    <string name="settings_storage_section">本地数据</string>
+    <string name="settings_cache_size">数据缓存：%1$s</string>
+    <string name="action_clear_cache">清除数据缓存</string>
+    <string name="settings_version">版本 %1$s · P0 原型</string>
+    <string name="status_auto_refresh_on">已开启后台自动刷新</string>
+    <string name="status_auto_refresh_off">已关闭后台自动刷新</string>
+    <string name="status_bound_refreshed">已排队刷新绑定的桌面组件</string>
+    <string name="status_cache_cleared">数据缓存已清除</string>
+</resources>

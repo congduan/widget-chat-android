@@ -1,0 +1,157 @@
+<resources>
+    <string name="widget_description">Configure text, battery and countdown widgets. AI chat arrives in a later stage.</string>
+    <string name="refresh">Refresh</string>
+    <string name="refresh_description">Refresh widget data</string>
+
+    <string name="hero_title">Let your home screen\ngrow the way you want.</string>
+    <string name="hero_subtitle">Start with one widget that actually works. Pick a template, tune the spec, then place it on the home screen.</string>
+    <string name="section_mine">01  My widgets</string>
+    <string name="section_preview">02  Home screen preview</string>
+    <string name="section_json">03  Edit JSON spec</string>
+    <string name="section_json_collapse">Collapse JSON spec</string>
+
+    <string name="action_new_draft">New draft</string>
+    <string name="action_import">Import JSON</string>
+    <string name="action_refresh_data">Refresh data</string>
+    <string name="action_validate">Validate &amp; preview</string>
+    <string name="action_export">Export</string>
+    <string name="action_save">Save changes</string>
+    <string name="action_save_copy">Save as copy</string>
+    <string name="action_undo">Restore previous version</string>
+    <string name="action_add_widget">Add to home screen</string>
+
+    <string name="state_dirty">Unsaved</string>
+    <string name="state_saved">Saved</string>
+    <string name="host_size">Home screen size: %1$d × %2$d dp</string>
+    <string name="chip_follow_host">Follow home screen</string>
+    <string name="chip_small">Compact</string>
+    <string name="chip_standard">Standard</string>
+    <string name="fit_hint">Small sizes shrink the text and keep the key information. Long-press the widget on the home screen and drag it taller for the full layout.</string>
+
+    <string name="chat_card_title">Chat to build</string>
+    <string name="chat_card_example">For example: a dark widget showing battery and an exam countdown.</string>
+    <string name="chat_card_note">Configure a model in Settings first. Only your message and the current spec are sent.</string>
+
+    <string name="json_hint">Edit text, textSize, background, targetDate, or configure STATIC / HTTP / SCRIPT sources under data.sources. Add \"click\": \"scheme://…\" to any node to open it on tap (widgetchat:// is handled by this app). Validate to see the preview.</string>
+    <string name="json_label">WidgetSpec v2</string>
+    <string name="footer_note">Stored locally · optional network data sources · WorkManager refreshes every 15 minutes at the earliest</string>
+
+    <string name="language">Language</string>
+    <string name="language_system">System default</string>
+    <string name="language_zh">中文</string>
+    <string name="language_en">English</string>
+
+    <string name="status_idle">Configure a model in Settings to start generating</string>
+    <string name="status_selected">Selected “%1$s”</string>
+    <string name="status_save_first">Save this widget before refreshing its data</string>
+    <string name="status_refreshing">Refreshing data…</string>
+    <string name="status_refreshed_local">No data sources configured; refreshed from local data</string>
+    <string name="status_refreshed">Data refreshed</string>
+    <string name="status_refresh_partial">Refreshed, %1$d of %2$d sources failed</string>
+    <string name="status_refresh_failed">Refresh failed: %1$s</string>
+    <string name="status_operation_failed">Operation failed: %1$s</string>
+    <string name="status_exported">Spec exported</string>
+    <string name="status_imported">Imported for preview; save it to add it to your library</string>
+    <string name="status_new_draft">New draft; save it to add it to your library</string>
+    <string name="status_preview_ok">Spec is valid, preview updated; not saved yet</string>
+    <string name="status_saved">Saved, bound home screen widgets updated</string>
+    <string name="status_saved_copy">Saved as an independent copy</string>
+    <string name="status_undone">Previous version restored</string>
+    <string name="status_pin_unsupported">Long-press an empty spot on the home screen → Widgets → Widget Chat, then pick a saved widget</string>
+    <string name="status_pin_requested">Confirm the system dialog; each home screen instance binds separately</string>
+    <string name="status_pin_rejected">The launcher declined the request; add the widget from the home screen widget list</string>
+
+    <string name="error_write_file">Cannot write the target file</string>
+    <string name="error_read_file">Cannot read the file</string>
+    <string name="error_too_large">Spec cannot exceed 64 KB</string>
+    <string name="error_library">Cannot read the widget library</string>
+    <string name="error_library_kept">Your data was not overwritten. Keep the app data and check the storage file.</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="toast_refresh_failed">Home screen refresh failed: %1$s</string>
+
+    <string name="configure_title">Choose a widget\nfor this home screen slot</string>
+    <string name="configure_instance">Home screen instance #%1$d · long-press it any time to reconfigure</string>
+    <string name="configure_apply">Use this widget</string>
+    <string name="configure_cancel">Cancel</string>
+    <string name="configure_save_failed">Save failed: %1$s</string>
+
+    <string name="widget_unbound_name">Pick a widget</string>
+    <string name="widget_unbound_hint">Long-press this widget and choose Configure</string>
+    <string name="widget_updated">Updated %1$s</string>
+    <string name="battery_unknown">Battery unknown</string>
+    <string name="progress_value">Progress %1$d%%</string>
+
+    <string name="template_daily_name">Daily note</string>
+    <string name="template_daily_quote">Leave a little time for yourself.</string>
+    <string name="template_battery_name">Battery board</string>
+    <string name="template_battery_title">Always charged</string>
+    <string name="template_countdown_name">Something to look forward to</string>
+    <string name="template_countdown_title">The next date worth waiting for</string>
+    <string name="template_countdown_hint">Edit targetDate in the JSON</string>
+    <string name="template_pdd_name">Pinduoduo deals</string>
+    <string name="template_pdd_title">Flash deals</string>
+    <string name="template_pdd_hint">Tap the button to open the deals page</string>
+    <string name="template_pdd_button">Shop now →</string>
+
+    <string name="tab_widgets">Widgets</string>
+    <string name="tab_templates">Templates</string>
+    <string name="tab_chat">Chat</string>
+    <string name="tab_settings">Settings</string>
+
+    <string name="templates_title">Start from a template</string>
+    <string name="templates_subtitle">Pick one to load it as a draft, then tune the JSON spec.</string>
+    <string name="action_use_template">Use this template</string>
+    <string name="status_template_loaded">Template %1$s loaded as a new draft</string>
+
+    <string name="chat_title">Describe the widget</string>
+    <string name="chat_subtitle">Describe it in words; DeepSeek or any OpenAI-compatible model drafts the spec.</string>
+    <string name="chat_input_hint">e.g. a dark widget with battery and an exam countdown</string>
+    <string name="chat_send">Send</string>
+    <string name="chat_switch_model">Model</string>
+    <string name="chat_manage_models">Manage</string>
+    <string name="status_model_switched">Switched to %1$s</string>
+    <string name="chat_generating">The model is drafting your widget…</string>
+    <string name="chat_apply_spec">Open in editor</string>
+    <string name="chat_not_configured">Add an API key in Settings first</string>
+    <string name="chat_invalid_spec">The model returned an invalid spec: %1$s</string>
+    <string name="chat_failed">Request failed: %1$s</string>
+    <string name="chat_spec_ready">Spec received. Review the preview, then open it in the editor.</string>
+    <string name="chat_reply_only">The model replied without a spec. Ask it to generate one.</string>
+    <string name="status_applied_ai">Generated spec loaded; save it to add it to your library</string>
+
+    <string name="settings_model_section">AI model</string>
+    <string name="model_provider">Provider</string>
+    <string name="model_deepseek">DeepSeek</string>
+    <string name="model_glm">Zhipu GLM</string>
+    <string name="model_openai">OpenAI</string>
+    <string name="model_custom">Custom (OpenAI compatible)</string>
+    <string name="model_common">Common models</string>
+    <string name="model_name">Model</string>
+    <string name="model_base_url">Base URL</string>
+    <string name="model_api_key">API key</string>
+    <string name="model_key_saved">Saved. Leave blank to keep it.</string>
+    <string name="model_key_missing">Not set</string>
+    <string name="model_privacy_hint">The key is encrypted with the Android Keystore and only sent to the endpoint above.</string>
+    <string name="model_profiles_hint">Every saved configuration is kept; switch between them from the Chat tab.</string>
+    <string name="action_save_model">Save model settings</string>
+    <string name="action_clear_key">Clear key</string>
+    <string name="status_model_saved">Model settings saved</string>
+    <string name="status_model_missing_name">Model name is required</string>
+    <string name="status_model_invalid_url">Base URL must start with https://</string>
+    <string name="status_key_cleared">API key cleared</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_subtitle">Refresh cadence, language and local data.</string>
+    <string name="settings_refresh_section">Data refresh</string>
+    <string name="settings_auto_refresh">Background auto refresh</string>
+    <string name="settings_auto_refresh_hint">WorkManager only; 15 minutes at the earliest</string>
+    <string name="action_refresh_bound">Refresh bound widgets</string>
+    <string name="settings_storage_section">Local data</string>
+    <string name="settings_cache_size">Data cache: %1$s</string>
+    <string name="action_clear_cache">Clear data cache</string>
+    <string name="settings_version">Version %1$s · P0 prototype</string>
+    <string name="status_auto_refresh_on">Background auto refresh enabled</string>
+    <string name="status_auto_refresh_off">Background auto refresh disabled</string>
+    <string name="status_bound_refreshed">Bound widgets queued for refresh</string>
+    <string name="status_cache_cleared">Data cache cleared</string>
+</resources>
